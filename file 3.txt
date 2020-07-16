@@ -1,0 +1,7 @@
+var gr = new GlideRecord('sys_user');
+gr.addQuery('name','sriram');
+gr.query();
+while(gr.next()){
+	gr.short_description = " ";
+	gr.update();
+}
